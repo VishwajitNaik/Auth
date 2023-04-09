@@ -1,0 +1,16 @@
+<button id="open-form-btn">Open Form</button>
+
+    <div id="popup-form-wrapper" style="display: none;">
+        <form action="/CreateSignUp" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="email">password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <input type="submit" value="sign up">
+        </form>
+        <button id="close-form-btn">Close</button>
+    </div>

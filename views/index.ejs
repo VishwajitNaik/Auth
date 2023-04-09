@@ -1,0 +1,31 @@
+<!-- <html>
+    <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body> -->
+        
+        <h1>Create Expensive cards</h1>
+
+        <form action="/user" method="POST">
+            <input type="text" name="name">
+            <button class="btn-hover color-1" type="submit" >save</button>       
+        </form>
+
+        <h5>Added Items</h5>
+
+        <% for(let obj of User_Data) {%>
+            <section>
+            <div class="card-div">
+                <img src="/images/OIP (11).jfif" alt="">
+                <h2><%= obj.name %></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vitae!</p>
+                <button class="btn-hover color-1"><a href="/delete-items/?id=<%= obj._id %>">Remove</a></button>
+            </div>
+        </section>
+            
+            
+        <%} %>
+
+    <!-- </body>
+</html> -->
